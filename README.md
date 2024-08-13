@@ -156,3 +156,199 @@ public class Casting {
     }
 }
 ```
+## Constantes
+```Java
+public class Constantes {
+    public static void main(String[] args) {
+        // variables que no pueden cambiar su valor.
+        final int currentlyAge = 45;
+        System.out.println(currentlyAge); // 45
+    }
+}
+```
+## Operadores aritméticos
+```Java
+import java.util.Scanner;
+
+public class Operadores_aritmeticos {
+    public static void main(String[] args) {
+        int valor1, valor2, resultado;
+
+        // Ingreso de valores
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Ingrese valor 1: ");
+        valor1 = entrada.nextInt();
+
+        System.out.println("Ingrese valor 2: ");
+        valor2 = entrada.nextInt();
+
+        // Suma
+        resultado = valor1 + valor2;
+        System.out.println("La suma es: " + resultado);
+
+        // Resta
+        resultado = valor1 - valor2;
+        System.out.println("La resta es: "+ resultado);
+
+        // Multiplicacion
+        resultado = valor1 * valor2;
+        System.out.println("La multiplicacion es: "+ resultado);
+
+        // Division entera
+        resultado = valor1 / valor2;
+        System.out.println("La division sin parte decimal: "+ resultado);
+
+        // Division con parte decimal
+        float resultado2 = (float)valor1 / valor2;
+        System.out.println("La division con parte decimal: "+ resultado2);
+
+        // Residuo o Modulo
+        resultado = valor1 % valor2;
+        System.out.println("El residuo es: "+ resultado);
+    }
+}
+```
+## Operadores de incremento y decremento.
+```Java
+public class Incremento {
+    public static void main(String[] args) {
+        int valor1 = 5;
+        System.out.println("Valor original: " + valor1); // 5
+
+        // Incrementando el valor "posfijo"=> primero lee la variable y luego la incrementa.
+        valor1++;
+        System.out.println("Valor incrementado: " + valor1); // 6
+
+        // Incrementando el valor "prefijo"=> primero la incrementa y luego la lee.
+        ++valor1;
+        System.out.println("Valor incrementado: " + valor1); // 7
+
+        // Incrementar un numero especifico.
+        valor1 +=5;
+        System.out.println("El ultimo valor incrementado 5 unidades mas: " + valor1); // 12
+
+        // Decremento
+        int valor2 = 9;
+        System.out.println("Valor original: " + valor2); // 9
+
+        valor2--;
+        System.out.println("Valor decrementado: " + valor2); // 8
+
+        --valor2;
+        System.out.println("Valor decrementado: " + valor2); // 7
+
+        valor2 -=5;
+        System.out.println("Valor final decrementado en 5 unidades: " + valor2); // 2
+
+        // Incremento con la multiplicacion
+        int valor3 = 10;
+        System.out.println("valor original: " + valor3);
+
+        // Incrementar por un factor de 2 veces.
+        valor3 *=2;
+        System.out.println("El valor incrementado por el producto es: " + valor3); // 20
+
+        // Incrementar por un factor de division de 2 veces.
+        valor3 /=5;
+        System.out.println("El valor incrementado por el producto es: " + valor3); // 4
+    }
+}
+```
+## Operadores de comparación.
+```Java
+public class Operadores_comparacion {
+    public static void main(String[] args) {
+        int valor1 = 90, valor2 = 50;
+
+        // Operador de igualdad (==)
+        var resultado = valor1 == valor2; // false 90 no es igual a 50
+        System.out.println(resultado);
+
+        // Operador diferente(!=)
+        var resultado2 = valor1 != valor2;
+        System.out.println(resultado2); // true 90 es diferente a 50
+
+        // Operador mayor que (> o >=)
+        var resultado3 = valor1 > valor2;
+        System.out.println(resultado3); // true 90 es mayor que 50
+
+        // Operador menor que (< o <=)
+        var resultado4 = valor1 <= valor2;
+        System.out.println(resultado4); // false 90 no es menor que 50
+    }
+}
+```
+## Operadores lógicos.
+```Java
+public class Operadores_logicos {
+    public static void main(String[] args) {
+
+        boolean a = true, b = false;
+
+        // Operador "and" &&
+        var operadorAnd = a && b; // true and false
+        System.out.println(operadorAnd); // false
+
+        // Operador "or" ||
+        var operadorOr = a || b; // true or false
+        System.out.println(operadorOr); // true
+
+        // Operador negacion "not" !
+        var operadorNot = !b; // niega (false)
+        System.out.println(operadorNot); // true
+
+        // Operador XOR logico
+        System.out.println(false ^ true); // solo necesita que una de las expresiones sea verdadera para que sea true
+    }
+}
+```
+## Condicionales If-else if-else.
+```Java
+import javax.swing.*;
+
+public class Condicional_IF {
+    public static void main(String[] args) {
+
+        String nombre;
+        int edad;
+
+        nombre = JOptionPane.showInputDialog(null,"Ingresa tu nombre: ");
+        String edadString = JOptionPane.showInputDialog(null,"Ingresa tu edad: ");
+        edad = Integer.parseInt(edadString);
+
+        // Analizando datos
+        if(edad <= 12){
+            JOptionPane.showMessageDialog(null,"Eres un niño(a).");
+        }else if(edad > 12 && edad < 19){
+            JOptionPane.showMessageDialog(null, "Eres adolescente.");
+        }else{
+            JOptionPane.showMessageDialog(null, "Eres un adulto.");
+        }
+    }
+}
+```
+##
+```Java
+
+```
+##
+```Java
+
+```
+##
+```Java
+
+```
+##
+```Java
+
+```
+##
+```Java
+
+```
+##
+```Java
+
+```
