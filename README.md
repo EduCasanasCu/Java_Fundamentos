@@ -23,7 +23,7 @@ public class Variables {
         // Booleano
         boolean isStudent = true; // true or false
         // Flotante
-        float numeroPii = 3.1415F;
+        float numeroPii = 3.1415F; // se agrega F al final.
         
         System.out.println(Nombre); // Bienvenido a Java edu
         System.out.println(edad); // 25
