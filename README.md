@@ -92,13 +92,16 @@ public class Input_Datos {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Escribe tu nombre: ");
-        nombre = entrada.next();
+        nombre = entrada.next(); // next()=> no guarda una cadena que contiene espacios.
+        // nextLine()=> guarda la cadena que contiene espacios hasta encontrar el salto de línea.
 
         System.out.println("Escribe tu edad: ");
         edad = entrada.nextInt();
 
         // Salida de datos
         System.out.println("Nombre: " + nombre);
+        // Si se usa next()=> y se escribe educa casas, solo imprime: educa.
+        // Si se usa nextLine()=> y se escribe educa casas, imprime todo: educa casas.
         System.out.println("Edad: " + edad);
     }
 }
