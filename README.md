@@ -155,7 +155,7 @@ public class Casting {
         int entero2 = 987;
         double enteroToDouble = (double)entero2;
 
-        System.out.println("El numero de entero a double es: " + enteroToDouble);
+        System.out.println("El numero de entero a double es: " + enteroToDouble); // 987.0
     }
 }
 ```
