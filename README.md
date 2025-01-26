@@ -571,6 +571,34 @@ public class DO_WHILE {
     }
 }
 ```
+```Java
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+
+        final String password = "chocolate";
+        Scanner teclado = new Scanner(System.in);
+        int attemps = 3;
+        do {
+
+            System.out.println("Ingrese la clave: ");
+            String userPassword = teclado.nextLine();
+
+            if(password.equals(userPassword)){ // es mejor usar equals que ==
+                System.out.println("Password correct!");
+                break;
+            }
+            else{
+                System.out.println("Wrong password!");
+            }
+
+            System.out.println("Intentos restantes" + (attemps-1));
+            attemps--;
+        }while(attemps>0);
+    }
+}
+```
 ## Bucle For.
 ```Java
 public class BUCLE_FOR {
