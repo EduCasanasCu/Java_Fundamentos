@@ -570,8 +570,7 @@ public class DO_WHILE {
 
     }
 }
-```
-```Java
+// Otro ejemplo DO-WHILE
 import java.util.Scanner;
 
 public class Main {
