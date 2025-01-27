@@ -544,6 +544,30 @@ public class While {
         }
     }
 }
+// EJERCICIO GENERADOR DE CONTRASEÑAS
+public class Main {
+    public static void main (String[] args){
+        String caracteres = "ABCDEF*@#0123456789";
+        String password = "";
+
+        int cantidadCaracteres = 10; // longitud de la contraseña a crear
+
+        while(cantidadCaracteres>0){
+            double aleatorio = Math.random() * caracteres.length(); // devuelve num aleatorios entre 0 y 10
+            double aleatorioRedondeadoInferior = Math.floor(aleatorio); // redondea hacia abajo, de 5.78 da 5
+            int doubleAenteroAleatorio = (int) aleatorioRedondeadoInferior; // casteo de double a entero
+
+            char charAleatorio = caracteres.charAt(doubleAenteroAleatorio);
+            // creara la contraseña del string 'caracteres' generando numeros aleatorios
+            // los cuales seran los indices a obtener del string.
+            password += charAleatorio;
+
+            cantidadCaracteres--;
+        }
+        System.out.println(password);
+
+    }
+}
 ```
 ## Bucle Do-While.
 ```Java
